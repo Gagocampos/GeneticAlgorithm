@@ -1,0 +1,16 @@
+============== Sessão 1 ==================
+- Valores relacionados à aptidão foram diminuídos
+- Mutação tem chance de ocorrer apenas nos indivíduos que possuem score menor que 97% do score maximo (evitar perder possíveis soluções boas) (não deu certo)
+- Elitismo implementado com 10 cópias do melhor indivíduo garantidas
+- Novo sistema de normalização implementado para distanciar boas soluções das ruins (resultou em divisões por zero) (não deu certo)
+- Cálculo de aptidão reformulado para que o indivíduo ganhe pontos ao coincidir janelas de professores (resultado promissor)
+
+============== Sessão 2 ==================
+- Comportamento anômalo descoberto e tratado com sucesso
+- Testes com 2000 gerações para taxas de mutações de 1%, 5% e 10% respectivamente: 13830, 13470, 13350
+- Testes com 2000 gerações para taxas de crossover de 25%, 50% e 75% respectivamente (mutação 1%): 13830, 13830, 13930 (17930)
+
+============== Sessão 3 ==================
+- Implementada nova versao de crossover onde metade de um individuo é sempre trocada com metade de outro
+- Implementada nova versao de mutação onde apenas um professor pode mutar quando um individuo é sorteado
+- Testes feitos com taxa de crossover 40%, 50%, 65% (mutação 5%): 17970, 17950, 17930
